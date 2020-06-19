@@ -1,0 +1,41 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-title>contact</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" slot="fixed" class="background">
+  
+  <ion-content>
+    
+  <ion-card>
+      <ion-item *ngFor="let booking of Bookings" class="user-list">
+        <ion-label>
+          <h2>
+            <ion-icon name="person"></ion-icon> {{booking.name}}
+            
+          </h2>
+       <h2>
+            <ion-icon name="call-outline"></ion-icon> {{booking.mobile}}
+            
+        </h2>
+         
+        </ion-label>
+  
+        <div class="item-note" item-end>
+          <button ion-button clear [routerLink]="['/edit-contact/', booking.$key]">
+            <ion-icon name="create" style="zoom:2.0"></ion-icon>
+          </button>
+          <button ion-button clear (click)="deleteBooking(booking.$key)">
+            <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+          </button>
+          <a button href="https://wa.me/WhatsAppNumber?text=Hello%20World" clear item-right><ion-icon name="logo-whatsapp" style="zoom: 2.0"></ion-icon></a>
+
+         
+        </div>
+      </ion-item>
+      </ion-card>
+  
+    <ion-button href="/create-contact" color="endxiety" shape="full" expand="block">Create Contact</ion-button>
+
+</ion-content>

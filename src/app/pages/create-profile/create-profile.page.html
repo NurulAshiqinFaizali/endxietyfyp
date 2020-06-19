@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="mango">
+    <ion-title>create-profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home/profile"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <ion-card>
+      <form class="container" [formGroup]="bookingForm" (ngSubmit)="formSubmit()" color="mango" >
+      <ion-item>
+        <ion-label  position="floating">First Name</ion-label>
+        <ion-input formControlName="firstName" type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Last Name</ion-label>
+        <ion-input formControlName="lastName" type="text" required></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input formControlName="email" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Mobile</ion-label>
+        <ion-input formControlName="mobile" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="endxiety" shape="full" expand="block">Create Profile</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-card>
+  </ion-list>
+</ion-content>

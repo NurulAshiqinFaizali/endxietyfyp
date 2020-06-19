@@ -1,0 +1,47 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" slot="fixed"  padding class="background">
+  
+<ion-card>
+  <img src="assets/images/profile.png"/>
+
+    <ion-item *ngFor="let booking of Bookings" class="user-list">
+      <ion-label color="mango">
+        <h2>
+          <ion-icon name="person"></ion-icon> {{booking.firstName}}
+          
+        </h2>
+        <h2>
+          <ion-icon name="person"></ion-icon> {{booking.lastName}}
+          
+        </h2>
+        <h2>
+          <ion-icon name="mail-outline"></ion-icon> {{booking.email}}
+          
+        </h2>
+        <h2>
+          <ion-icon name="call-outline"></ion-icon> {{booking.mobile}}
+          
+        </h2>
+       
+      </ion-label>
+
+      <div class="item-note" item-end>
+        <button ion-button clear [routerLink]="['/edit-profile/', booking.$key]">
+          <ion-icon name="create" style="zoom:2.0"></ion-icon>
+        </button>
+        <button ion-button clear (click)="deleteBooking(booking.$key)">
+          <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+        </button>
+      </div>
+    </ion-item>
+    </ion-card>
+
+  <ion-button href="/create-profile" color="endxiety" shape="full" expand="block">Create Profile</ion-button>
+  <ion-button type="submit" (click)="authService.SignOut()" expand="block">Logout</ion-button>
+
+</ion-content>
