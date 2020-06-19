@@ -79,11 +79,12 @@ export class AuthenticationService {
    GoogleAuth() {
     return this.AuthLogin(new auth.GoogleAuthProvider());
   }
+
   AuthLogin(provider) {
     return this.ngFireAuth.signInWithPopup(provider)
     .then((result) => {
        this.ngZone.run(() => {
-          this.router.navigate(['dashboard']);
+          this.router.navigate(['home/profile']);
         })
       this.SetUserData(result.user);
     }).catch((error) => {
@@ -105,11 +106,14 @@ export class AuthenticationService {
       merge: true
     })
   }
-// Sign-out 
+  
+  // Sign-out 
   SignOut() {
     return this.ngFireAuth.signOut().then(() => {
       localStorage.removeItem('user');
       this.router.navigate(['login']);
     })
   }
-}
+  }
+
+  

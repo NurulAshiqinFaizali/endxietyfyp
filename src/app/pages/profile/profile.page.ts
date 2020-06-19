@@ -5,6 +5,7 @@ import { FormGroup, FormBuilder } from "@angular/forms";
 import { serviceProfile } from '../shared2/serviceProfile';
 import { Profiles } from '../shared2/profile';
 
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
@@ -13,7 +14,7 @@ import { Profiles } from '../shared2/profile';
 export class ProfilePage implements OnInit {
   Bookings = [];
   constructor(
-    authService: AuthenticationService,
+    public authService: AuthenticationService,
     private router: Router,
     private aptService: serviceProfile
   ) { }

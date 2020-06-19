@@ -43,7 +43,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
     {
       path: 'edit-contact/:id',
       loadChildren: () => import('./pages/edit-contact/edit-contact.module').then( m => m.EditContactPageModule)
-    }
+    },
+  {
+    path: 'forgot-password',
+    loadChildren: () => import('./pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  }
   ];
   @NgModule({
   imports: [

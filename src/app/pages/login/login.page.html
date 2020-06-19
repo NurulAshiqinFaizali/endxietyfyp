@@ -23,9 +23,9 @@
   </ion-item>
   </ion-list>
 
-  <ion-button type="submit" fill="clear" (click)="authService.PasswordRecover()" expand="block">Forgot password</ion-button>
-  <ion-button type="submit" color="danger" (click)="authService.GoogleAuth()" expand="block">Login with Google</ion-button>
-  <ion-button type="submit" (click)="logIn(email, password)" expand="block" share="round" color="endxiety">Login</ion-button>
+  <ion-button fill="clear" href="/forgot-password">Forgot password</ion-button>
+  <ion-button type="submit" color="danger" (click)="authService.GoogleAuth()" shape="full" expand="round">Login with Google</ion-button>
+  <ion-button type="submit" (click)="logIn(email, password)" expand="round" shape="full" color="endxiety">Login</ion-button>
   
 </form>
   </ion-content>
