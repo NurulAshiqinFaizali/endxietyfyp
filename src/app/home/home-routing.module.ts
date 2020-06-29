@@ -20,17 +20,10 @@ m => m.EndxietyPageModule
 )
 },
 {
-path: 'contact',
+path: 'dashboard',
 loadChildren: () =>
-import('../pages/contact/contact.module').then(
-m => m.ContactPageModule
-)
-},
-{
-path: 'profile',
-loadChildren: () =>
-import('../pages/profile/profile.module').then(
-m => m.ProfilePageModule
+import('../pages/dashboard/dashboard.module').then(
+m => m.DashboardPageModule
 )
 }
 ]

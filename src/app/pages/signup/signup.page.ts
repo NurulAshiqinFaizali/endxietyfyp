@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
-import { AuthenticationService } from "/home/ash/endxietyfyp/src/app/shared/authentication-service";
+import { AuthenticationService } from "C:/Users/ashmg/endxietyfyp/src/app/shared/authentication-service";
 
 
 @Component({
@@ -16,7 +16,14 @@ export class SignupPage implements OnInit {
     public router: Router
   ) { }
 
-  ngOnInit(){}
+  ngOnInit(
+
+
+
+
+
+    
+  ){}
 
   signUp(email, password){
     this.authService.RegisterUser(email.value, password.value)

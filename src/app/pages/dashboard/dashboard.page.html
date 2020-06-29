@@ -1,0 +1,32 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" slot="fixed"  padding class="background">
+  
+<ion-card>
+  <img src="assets/images/profile.png"/>
+      <div class="row" *ngIf="authService.userData as user">
+        <div class="col-md-12">
+          <div class="media">
+            <div class="media-body">
+              <div class="ion-text-center">
+              <h1>Welcome to Endxiety</h1>
+              <p>Registered Email: <strong>{{user.email}}</strong></p>
+              <p>Email Verified: <strong>{{user.emailVerified}}</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+
+    </ion-card>
+
+
+<ion-button type="submit" (click)="authService.SignOut()" shape="full" expand="round">Logout</ion-button>
+
+</ion-content>

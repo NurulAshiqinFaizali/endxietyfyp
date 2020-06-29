@@ -1,31 +1,36 @@
-<ion-header translucent no-border>
-  <ion-toolbar>
-  <ion-title>Login</ion-title>
+<ion-header>
+  <ion-toolbar color="mango">
+  <ion-title>Sign In</ion-title>
   </ion-toolbar>
   </ion-header>
   
-  <ion-content fullscreen="true" slot="fixed"  padding class="background">
+  <ion-content color="mango"> 
   <img src="assets/images/logo.png"/>
   <form>
   <ion-list>
-  <ion-item class="background">
+  <ion-item color="mango">
   <ion-label position="floating">Email</ion-label>
   <ion-input  type="text" #email required></ion-input>
   </ion-item>
   
-  <ion-item class="background">
+  <ion-item  color="mango">
   <ion-label position="floating">Password</ion-label>
   <ion-input type="password" #password required></ion-input>
   </ion-item>
-  
-  <ion-item lines='none' class="background"> 
-  <a routerLink='/signup'>Create Account</a>
-  </ion-item>
-  </ion-list>
+</ion-list>
+  <ion-button fill="clear" href="/forgot-password">Forgot password?</ion-button>
 
-  <ion-button fill="clear" href="/forgot-password">Forgot password</ion-button>
-  <ion-button type="submit" color="danger" (click)="authService.GoogleAuth()" shape="full" expand="round">Login with Google</ion-button>
   <ion-button type="submit" (click)="logIn(email, password)" expand="round" shape="full" color="endxiety">Login</ion-button>
+  
+  <p text-center>Don't have a account?</p>
+
+
+  <ion-button href="/signup" expand="round" shape="full" color="endxiety">Sign Up</ion-button>
+ 
+ 
+
+ 
+  
   
 </form>
   </ion-content>

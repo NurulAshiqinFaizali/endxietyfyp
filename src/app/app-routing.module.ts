@@ -28,26 +28,27 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
       path: 'verify-email',
       loadChildren: () => import('./pages/verify-email/verify-email.module').then( m => m.VerifyEmailPageModule)
     },
-    {
-      path: 'edit-profile/:id',
-      loadChildren: () => import('./pages/edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
-    },
-    {
-      path: 'create-profile',
-      loadChildren: () => import('./pages/create-profile/create-profile.module').then( m => m.CreateProfilePageModule)
-    },
-    {
-      path: 'create-contact',
-      loadChildren: () => import('./pages/create-contact/create-contact.module').then( m => m.CreateContactPageModule)
-    },
-    {
-      path: 'edit-contact/:id',
-      loadChildren: () => import('./pages/edit-contact/edit-contact.module').then( m => m.EditContactPageModule)
-    },
   {
     path: 'forgot-password',
     loadChildren: () => import('./pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },  {
+    path: 'songs',
+    loadChildren: () => import('./pages/songs/songs.module').then( m => m.SongsPageModule)
+  },
+  {
+    path: 'call',
+    loadChildren: () => import('./pages/call/call.module').then( m => m.CallPageModule)
+  },
+  {
+    path: 'breathe',
+    loadChildren: () => import('./pages/breathe/breathe.module').then( m => m.BreathePageModule)
   }
+
+
   ];
   @NgModule({
   imports: [

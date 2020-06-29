@@ -11,6 +11,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 
+import { CallNumber } from '@ionic-native/call-number/ngx';
+
+
 //  firebase imports, remove what you don't require
 
 import { AngularFireModule } from '@angular/fire';
@@ -35,6 +38,7 @@ import { ReactiveFormsModule} from '@angular/forms'
     StatusBar,
     SplashScreen,
     AngularFirestoreModule,
+    CallNumber,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
    
   ],

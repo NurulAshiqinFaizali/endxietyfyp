@@ -1,28 +1,35 @@
-<ion-header translucent no-border>
-  <ion-toolbar>
-  <ion-title>Registration</ion-title>
+<ion-header>
+  <ion-toolbar color="mango">
+  <ion-title>Sign Up</ion-title>
   </ion-toolbar>
   </ion-header>
   
-  <ion-content fullscreen="true" slot="fixed"  padding class="background">
+  <ion-content color="mango">
   <img src="assets/images/logo.png" class="smallLogo"/>
   <form>
   <ion-list>
-  <ion-item class="background">
+
+  <ion-item color="mango">
+  <ion-label position="floating">Username</ion-label>
+  <ion-input type="text" #password required></ion-input>
+  </ion-item>
+
+
+  <ion-item class="center" color="mango"> 
   <ion-label position="floating">Email</ion-label>
   <ion-input type="text" #email required></ion-input>
   </ion-item>
   
-  <ion-item class="background">
+  <ion-item color="mango">
   <ion-label position="floating">Password</ion-label>
   <ion-input type="password" #password required></ion-input>
   </ion-item>
-  
-  <ion-item lines='none' class="background">
+
+  <ion-item lines='none' color="mango">
   Already have an account? <a routerLink='/login'>Sign in.</a>
   </ion-item>
   </ion-list>
-  <ion-button type="submit" (click)="signUp(email, password)" expand="round" shape="full" color="endxiety">Registration</ion-button>
+  <ion-button type="submit" (click)="signUp(email, password)" expand="round" shape="full" color="endxiety">sign up</ion-button>
   </form>
   </ion-content>
       

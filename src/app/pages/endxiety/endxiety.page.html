@@ -7,40 +7,27 @@
 <ion-content fullscreen="true" slot="fixed"  padding class="background">
    
   
-  <ion-card>
-    <img src="assets/images/tenor.gif"/>
-  
-          <ion-card-header>
-            	5-4-3-2-1 Coping Technique for Anxiety
-          </ion-card-header>
-        <ion-card-content>
+    <div class="ion-text-justify">
+      <h1>Having anxiety attack?</h1>
+      <h1>Press the button and click on</h1>
+      
 
-          <ion-list>
-            <ion-item >
-            <ion-icon name="eye-sharp"></ion-icon>
-             Acknowledge 5 things you see 
-            </ion-item>
-      
-            <ion-item>
-              <ion-icon name="hand-left-sharp"></ion-icon>
-              Acknowledge 4 things you can touch 
-            </ion-item>
-      
-            <ion-item>
-              <ion-icon name="ear-sharp"></ion-icon>
-              Acknowledge 3 things you hear
-            </ion-item>
-      
-            <ion-item>
-              <ion-icon name="leaf-sharp"></ion-icon>
-            Acknowledge 2 things you can smell
-            </ion-item>
-      
-            <ion-item>
-              <ion-icon name="fast-food-sharp"></ion-icon>
-            Acknowledge 1 thing you can taste
-            </ion-item>
-   </ion-list>
-        </ion-card-content>
-      </ion-card>
-</ion-content>
+<h3>Music for mind relaxation</h3>
+<h3>Notes for breathing exercise and coping technique</h3>
+<h3>Phone for  Befrienders hotline emotional support.</h3>
+
+    <ion-fab vertical="center" horizontal="center" slot="fixed">
+    <ion-fab-button color="danger"> 
+      <ion-icon name="medkit"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+    <ion-fab-button (click)="nextpage1()"><ion-icon name="musical-notes-outline"></ion-icon>></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom"> 
+    <ion-fab-button (click)="nextpage2()"><ion-icon name="document-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+    <ion-fab-button (click)="nextpage3()"><ion-icon name="call-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list> 
+    </ion-fab>
+

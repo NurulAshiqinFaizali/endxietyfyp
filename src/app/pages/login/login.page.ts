@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
-import { AuthenticationService } from "/home/ash/endxietyfyp/src/app/shared/authentication-service";
+import { AuthenticationService } from "C:/Users/ashmg/endxietyfyp/src/app/shared/authentication-service";
 
 @Component({
   selector: 'app-login',
@@ -21,7 +21,7 @@ export class LoginPage implements OnInit {
     this.authService.SignIn(email.value, password.value)
       .then((res) => {
         if(this.authService.isEmailVerified) {
-          this.router.navigate(['home/profile']);          
+          this.router.navigate(['home/dashboard']);          
         } else {
           window.alert('Email is not verified')
           return false;

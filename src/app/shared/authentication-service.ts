@@ -38,6 +38,7 @@ export class AuthenticationService {
  // Login in with email/password
  SignIn(email, password) {
     return this.ngFireAuth.signInWithEmailAndPassword(email, password)
+    
   }
 
   // Register user with email/password
@@ -84,7 +85,7 @@ export class AuthenticationService {
     return this.ngFireAuth.signInWithPopup(provider)
     .then((result) => {
        this.ngZone.run(() => {
-          this.router.navigate(['home/profile']);
+          this.router.navigate(['home/dashboard']);
         })
       this.SetUserData(result.user);
     }).catch((error) => {
