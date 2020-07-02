@@ -1,0 +1,17 @@
+.square {  
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    background: rgba(248, 7, 67, 0.5);
+    margin: 150px;
+  }
+
+  
+ion-content.background{
+    --background: url(../background.png) 0 0/100% 100% no-repeat;
+}
+
+ion-toolbar {
+    --background: transparent;
+}
+ 

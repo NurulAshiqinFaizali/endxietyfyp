@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title>
+      Breathing Exercise
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" slot="fixed"  padding class="background">
+  
+<h1 style="text-align: center">Practise this breathe exercise</h1>
+<h1 style="text-align: center">Take a deep breathe sync with this</h1>
+   
+  
+  <div class="square"></div>
+  <ion-row>
+  <ion-col width-50 style="text-align: right">
+    
+  <ion-button round outline color="light" (click)="breathe()"id="play"expand="round" >START</ion-button>
+</ion-col>
+<ion-col width-50 style="text-align: left">
+  <ion-button color="light" (click)="breathe()"id="stop" expand="round">END</ion-button>
+</ion-col>
+>   </ion-row>
+ 
+
+
+
+
+
+  
+
+
+</ion-content>

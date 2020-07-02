@@ -6,15 +6,18 @@
 
 <ion-content fullscreen="true" slot="fixed"  padding class="background">
    
-  
+ 
     <div class="ion-text-justify">
-      <h1>Having anxiety attack?</h1>
-      <h1>Press the button and click on</h1>
+      <h1 style="text-align: justify">Having anxiety attack?</h1>
+      <h1 style="text-align: justify">Press the button and click on</h1>
       
 
-<h3>Music for mind relaxation</h3>
-<h3>Notes for breathing exercise and coping technique</h3>
-<h3>Phone for  Befrienders hotline emotional support.</h3>
+<h5 style="text-align: justify">Music for mind relaxation</h5>
+<h5 style="text-align: justify">Exercise for breathing exercise </h5>
+<h5 style="text-align: justify">Notes for focus coping technique.</h5>
+<h5 style="text-align: justify">Phone for  Befrienders hotline emotional support.</h5>
+</div>
+
 
     <ion-fab vertical="center" horizontal="center" slot="fixed">
     <ion-fab-button color="danger"> 
@@ -26,8 +29,11 @@
     <ion-fab-list side="bottom"> 
     <ion-fab-button (click)="nextpage2()"><ion-icon name="document-outline"></ion-icon></ion-fab-button>
     </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button (click)="nextpage4()"><ion-icon name="barbell-outline"></ion-icon></ion-fab-button>
+      </ion-fab-list>
     <ion-fab-list side="end">
     <ion-fab-button (click)="nextpage3()"><ion-icon name="call-outline"></ion-icon></ion-fab-button>
     </ion-fab-list> 
     </ion-fab>
-
+  

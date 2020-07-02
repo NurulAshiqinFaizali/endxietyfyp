@@ -46,6 +46,14 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
   {
     path: 'breathe',
     loadChildren: () => import('./pages/breathe/breathe.module').then( m => m.BreathePageModule)
+  },
+  {
+    path: 'exercise',
+    loadChildren: () => import('./pages/exercise/exercise.module').then( m => m.ExercisePageModule)
+  },
+  {
+    path: 'first',
+    loadChildren: () => import('./pages/first/first.module').then( m => m.FirstPageModule)
   }
 
 

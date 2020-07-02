@@ -7,11 +7,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-item lines="none" *ngFor="let song of songs" (click)="playSong(song.title,song.subtitle,song.img,song.path)">
+<ion-content fullscreen="true" slot="fixed"  padding class="background">
+  <ion-item  class="background" lines="none" *ngFor="let song of songs" (click)="playSong(song.title,song.subtitle,song.img,song.path)">
     <ion-thumbnail slot="start">
     </ion-thumbnail>
-    <ion-label> 
+    <ion-label > 
        <h2>{{song.title}}</h2>
        <p>{{song.subtitle}}</p>
     </ion-label>

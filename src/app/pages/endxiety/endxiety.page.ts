@@ -31,4 +31,9 @@ nextpage3() {
 
 }
 
+nextpage4() {
+  this.route.navigate(['/exercise']);
+
+}
+
 }
